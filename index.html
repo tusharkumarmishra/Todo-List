@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center mt-4"> TO-DO LIST</h1>
+    <form id="todo-form" class="mb-4">
+      <div class="form-row align-items-center">
+        <div class="col">
+          <input type="text" class="form-control" id="todo-input" placeholder="Enter a task" required>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">Add Task</button>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <ul id="todo-list" class="list-group">
+          <!-- Existing tasks will be dynamically added here -->
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-6 mx-auto">
+        <div class="form-group">
+          <select id="filter-select" class="form-control">
+            <option value="all">All Tasks</option>
+            <option value="active">Active Tasks</option>
+            <option value="completed">Completed Tasks</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
